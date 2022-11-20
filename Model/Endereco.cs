@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sistema_de_CRUD.Controller
+namespace Sistema_de_CRUD.Model
 {
     class Endereco
     {

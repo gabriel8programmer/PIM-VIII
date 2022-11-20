@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Sistema_de_CRUD.Model;
 
 namespace Sistema_de_CRUD.Controller
 {
