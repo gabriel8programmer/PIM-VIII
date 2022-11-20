@@ -1,0 +1,22 @@
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\bin\Debug\Sistema de CRUD.exe.config
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\bin\Debug\Sistema de CRUD.exe
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\bin\Debug\Sistema de CRUD.pdb
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\obj\Debug\Sistema de CRUD.csproj.AssemblyReference.cache
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\obj\Debug\Sistema_de_CRUD.Properties.Resources.resources
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\obj\Debug\Sistema_de_CRUD.View.FormDados.resources
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\obj\Debug\Sistema_de_CRUD.View.FormPesquisa.resources
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\obj\Debug\Sistema de CRUD.csproj.GenerateResource.cache
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\obj\Debug\Sistema de CRUD.csproj.CoreCompileInputs.cache
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\obj\Debug\Sistema de CRUD.exe
+C:\FACULDADE\PIM(s)\PIM VIII\PROGRAMA C#\Sistema de CRUD\obj\Debug\Sistema de CRUD.pdb
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\bin\Debug\Sistema de CRUD.exe.config
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\bin\Debug\Sistema de CRUD.exe
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\bin\Debug\Sistema de CRUD.pdb
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\obj\Debug\Sistema de CRUD.csproj.AssemblyReference.cache
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\obj\Debug\Sistema_de_CRUD.Properties.Resources.resources
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\obj\Debug\Sistema_de_CRUD.View.FormDados.resources
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\obj\Debug\Sistema_de_CRUD.View.FormPesquisa.resources
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\obj\Debug\Sistema de CRUD.csproj.GenerateResource.cache
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\obj\Debug\Sistema de CRUD.csproj.CoreCompileInputs.cache
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\obj\Debug\Sistema de CRUD.exe
+C:\FACULDADE\PIM(s)\PIM VIII\Sistema de CRUD\obj\Debug\Sistema de CRUD.pdb
