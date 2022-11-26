@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema_de_CRUD.View
+namespace Sistema_de_CRUD
 {
     public partial class FormDados : Form
     {
@@ -83,6 +83,11 @@ namespace Sistema_de_CRUD.View
         private void sairToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void salvarToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

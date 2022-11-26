@@ -1,5 +1,5 @@
 ﻿
-namespace Sistema_de_CRUD.View
+namespace Sistema_de_CRUD
 {
     partial class FormDados
     {
@@ -35,6 +35,9 @@ namespace Sistema_de_CRUD.View
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.rdbMovel = new System.Windows.Forms.RadioButton();
+            this.rdbFixo = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbmLista = new System.Windows.Forms.ComboBox();
@@ -42,7 +45,7 @@ namespace Sistema_de_CRUD.View
             this.label1 = new System.Windows.Forms.Label();
             this.mtxtTel = new System.Windows.Forms.MaskedTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbmCidade = new System.Windows.Forms.ComboBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.cbmEstado = new System.Windows.Forms.ComboBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.mtxtCEP = new System.Windows.Forms.MaskedTextBox();
@@ -54,11 +57,6 @@ namespace Sistema_de_CRUD.View
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.rdbFixo = new System.Windows.Forms.RadioButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.rdbMovel = new System.Windows.Forms.RadioButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,8 +66,8 @@ namespace Sistema_de_CRUD.View
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +88,7 @@ namespace Sistema_de_CRUD.View
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(67, 38);
+            this.label7.Location = new System.Drawing.Point(17, 38);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 20);
             this.label7.TabIndex = 6;
@@ -108,7 +106,7 @@ namespace Sistema_de_CRUD.View
             // mtxtCPF
             // 
             this.mtxtCPF.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtCPF.Location = new System.Drawing.Point(71, 61);
+            this.mtxtCPF.Location = new System.Drawing.Point(21, 61);
             this.mtxtCPF.Mask = "000.000.000-00";
             this.mtxtCPF.Name = "mtxtCPF";
             this.mtxtCPF.Size = new System.Drawing.Size(127, 22);
@@ -118,14 +116,12 @@ namespace Sistema_de_CRUD.View
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.txtID);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.mtxtCPF);
-            this.panel1.Location = new System.Drawing.Point(24, 27);
+            this.panel1.Location = new System.Drawing.Point(24, 33);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(542, 174);
             this.panel1.TabIndex = 9;
@@ -140,17 +136,50 @@ namespace Sistema_de_CRUD.View
             this.panel3.Controls.Add(this.txtAdd);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.mtxtTel);
-            this.panel3.Location = new System.Drawing.Point(215, 23);
+            this.panel3.Location = new System.Drawing.Point(239, 23);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(278, 132);
             this.panel3.TabIndex = 10;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.rdbMovel);
+            this.panel4.Controls.Add(this.rdbFixo);
+            this.panel4.Location = new System.Drawing.Point(22, 87);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(109, 25);
+            this.panel4.TabIndex = 9;
+            // 
+            // rdbMovel
+            // 
+            this.rdbMovel.AutoSize = true;
+            this.rdbMovel.ForeColor = System.Drawing.Color.White;
+            this.rdbMovel.Location = new System.Drawing.Point(52, 4);
+            this.rdbMovel.Name = "rdbMovel";
+            this.rdbMovel.Size = new System.Drawing.Size(54, 17);
+            this.rdbMovel.TabIndex = 9;
+            this.rdbMovel.TabStop = true;
+            this.rdbMovel.Text = "Móvel";
+            this.rdbMovel.UseVisualStyleBackColor = true;
+            // 
+            // rdbFixo
+            // 
+            this.rdbFixo.AutoSize = true;
+            this.rdbFixo.ForeColor = System.Drawing.Color.White;
+            this.rdbFixo.Location = new System.Drawing.Point(3, 3);
+            this.rdbFixo.Name = "rdbFixo";
+            this.rdbFixo.Size = new System.Drawing.Size(44, 17);
+            this.rdbFixo.TabIndex = 8;
+            this.rdbFixo.TabStop = true;
+            this.rdbFixo.Text = "Fixo";
+            this.rdbFixo.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(28, 67);
+            this.label4.Location = new System.Drawing.Point(16, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 20);
             this.label4.TabIndex = 7;
@@ -161,7 +190,7 @@ namespace Sistema_de_CRUD.View
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(145, 67);
+            this.label3.Location = new System.Drawing.Point(133, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 20);
             this.label3.TabIndex = 5;
@@ -172,9 +201,9 @@ namespace Sistema_de_CRUD.View
             // 
             this.cbmLista.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbmLista.FormattingEnabled = true;
-            this.cbmLista.Location = new System.Drawing.Point(149, 88);
+            this.cbmLista.Location = new System.Drawing.Point(137, 88);
             this.cbmLista.Name = "cbmLista";
-            this.cbmLista.Size = new System.Drawing.Size(107, 24);
+            this.cbmLista.Size = new System.Drawing.Size(119, 24);
             this.cbmLista.TabIndex = 4;
             this.cbmLista.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -182,7 +211,7 @@ namespace Sistema_de_CRUD.View
             // 
             this.txtAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtAdd.ForeColor = System.Drawing.Color.White;
-            this.txtAdd.Location = new System.Drawing.Point(129, 36);
+            this.txtAdd.Location = new System.Drawing.Point(117, 36);
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(46, 26);
             this.txtAdd.TabIndex = 3;
@@ -195,7 +224,7 @@ namespace Sistema_de_CRUD.View
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(28, 15);
+            this.label1.Location = new System.Drawing.Point(16, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 2;
@@ -204,7 +233,7 @@ namespace Sistema_de_CRUD.View
             // mtxtTel
             // 
             this.mtxtTel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtTel.Location = new System.Drawing.Point(32, 38);
+            this.mtxtTel.Location = new System.Drawing.Point(20, 38);
             this.mtxtTel.Mask = "(00)00000-0000";
             this.mtxtTel.Name = "mtxtTel";
             this.mtxtTel.Size = new System.Drawing.Size(95, 22);
@@ -213,7 +242,7 @@ namespace Sistema_de_CRUD.View
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.cbmCidade);
+            this.panel2.Controls.Add(this.txtCidade);
             this.panel2.Controls.Add(this.cbmEstado);
             this.panel2.Controls.Add(this.txtBairro);
             this.panel2.Controls.Add(this.mtxtCEP);
@@ -225,20 +254,18 @@ namespace Sistema_de_CRUD.View
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(24, 207);
+            this.panel2.Location = new System.Drawing.Point(24, 209);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(542, 133);
             this.panel2.TabIndex = 10;
             // 
-            // cbmCidade
+            // txtCidade
             // 
-            this.cbmCidade.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbmCidade.FormattingEnabled = true;
-            this.cbmCidade.Location = new System.Drawing.Point(326, 82);
-            this.cbmCidade.Name = "cbmCidade";
-            this.cbmCidade.Size = new System.Drawing.Size(191, 24);
-            this.cbmCidade.TabIndex = 13;
-            this.cbmCidade.Text = "[SELECIONE]";
+            this.txtCidade.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.Location = new System.Drawing.Point(326, 83);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(191, 22);
+            this.txtCidade.TabIndex = 13;
             // 
             // cbmEstado
             // 
@@ -378,58 +405,6 @@ namespace Sistema_de_CRUD.View
             this.label5.TabIndex = 2;
             this.label5.Text = "Logradouro:";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(16, 38);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 20);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "ID:";
-            // 
-            // txtID
-            // 
-            this.txtID.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(20, 61);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(45, 22);
-            this.txtID.TabIndex = 12;
-            // 
-            // rdbFixo
-            // 
-            this.rdbFixo.AutoSize = true;
-            this.rdbFixo.ForeColor = System.Drawing.Color.White;
-            this.rdbFixo.Location = new System.Drawing.Point(3, 3);
-            this.rdbFixo.Name = "rdbFixo";
-            this.rdbFixo.Size = new System.Drawing.Size(44, 17);
-            this.rdbFixo.TabIndex = 8;
-            this.rdbFixo.TabStop = true;
-            this.rdbFixo.Text = "Fixo";
-            this.rdbFixo.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.rdbMovel);
-            this.panel4.Controls.Add(this.rdbFixo);
-            this.panel4.Location = new System.Drawing.Point(30, 87);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(109, 25);
-            this.panel4.TabIndex = 9;
-            // 
-            // rdbMovel
-            // 
-            this.rdbMovel.AutoSize = true;
-            this.rdbMovel.ForeColor = System.Drawing.Color.White;
-            this.rdbMovel.Location = new System.Drawing.Point(52, 3);
-            this.rdbMovel.Name = "rdbMovel";
-            this.rdbMovel.Size = new System.Drawing.Size(54, 17);
-            this.rdbMovel.TabIndex = 9;
-            this.rdbMovel.TabStop = true;
-            this.rdbMovel.Text = "Móvel";
-            this.rdbMovel.UseVisualStyleBackColor = true;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -457,6 +432,7 @@ namespace Sistema_de_CRUD.View
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
             this.salvarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salvarToolStripMenuItem.Text = "Salvar";
+            this.salvarToolStripMenuItem.Click += new System.EventHandler(this.salvarToolStripMenuItem_Click_1);
             // 
             // atualizarToolStripMenuItem
             // 
@@ -505,10 +481,10 @@ namespace Sistema_de_CRUD.View
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -537,13 +513,10 @@ namespace Sistema_de_CRUD.View
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbmCidade;
         private System.Windows.Forms.ComboBox cbmEstado;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.MaskedTextBox mtxtCEP;
         private System.Windows.Forms.MaskedTextBox mtxtNum;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RadioButton rdbMovel;
         private System.Windows.Forms.RadioButton rdbFixo;
@@ -554,5 +527,6 @@ namespace Sistema_de_CRUD.View
         private System.Windows.Forms.ToolStripMenuItem excluirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtCidade;
     }
 }
